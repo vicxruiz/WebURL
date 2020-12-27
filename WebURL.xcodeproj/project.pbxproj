@@ -21,6 +21,8 @@
 		9849CBF62599324E000BB31C /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9849CBF52599324E000BB31C /* UIViewControllerExtensions.swift */; };
 		9849CC1725993B6A000BB31C /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9849CC1625993B6A000BB31C /* InputField.swift */; };
 		9851F0DE2599406200466883 /* ButtonWithText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9851F0DD2599406200466883 /* ButtonWithText.swift */; };
+		9851F0E32599455900466883 /* URLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9851F0E22599455900466883 /* URLController.swift */; };
+		9851F0E82599469600466883 /* URLTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9851F0E72599469600466883 /* URLTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		9849CBF52599324E000BB31C /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		9849CC1625993B6A000BB31C /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 		9851F0DD2599406200466883 /* ButtonWithText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithText.swift; sourceTree = "<group>"; };
+		9851F0E22599455900466883 /* URLController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLController.swift; sourceTree = "<group>"; };
+		9851F0E72599469600466883 /* URLTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 			children = (
 				9849CC1625993B6A000BB31C /* InputField.swift */,
 				9851F0DD2599406200466883 /* ButtonWithText.swift */,
+				9851F0E72599469600466883 /* URLTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 		9849CBD425992B29000BB31C /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9851F0E22599455900466883 /* URLController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -359,7 +365,9 @@
 				9849CBEC25992E75000BB31C /* WebURL.swift in Sources */,
 				9849CBE725992D7A000BB31C /* TextContent.swift in Sources */,
 				9849CB9C259929EC000BB31C /* AppDelegate.swift in Sources */,
+				9851F0E32599455900466883 /* URLController.swift in Sources */,
 				9849CB9E259929EC000BB31C /* SceneDelegate.swift in Sources */,
+				9851F0E82599469600466883 /* URLTableViewCell.swift in Sources */,
 				9849CBF1259931A8000BB31C /* URLViewController.swift in Sources */,
 				9849CC1725993B6A000BB31C /* InputField.swift in Sources */,
 				9849CBDF25992D1A000BB31C /* HTTPMethod.swift in Sources */,

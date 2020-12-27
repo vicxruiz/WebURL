@@ -10,6 +10,9 @@ import UIKit
 
 class URLViewController: UIViewController {
     
+    //MARK: - Properties
+    
+    let urlController = URLController()
     let tableView = UITableView()
     let URLField = InputField(placeholder: TextContent.TextField.enterURL)
     let addURLButton = ButtonWithText(placeholder: TextContent.Button.addURL)
@@ -18,8 +21,6 @@ class URLViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(screenWidth)
-        print(screenHeight)
         setupViews()
     }
     
@@ -66,6 +67,9 @@ extension URLViewController {
     private func setupTableView() {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.tableFooterView = UIView(frame: .zero)
+        tableView.register(URLTableViewCell.self, forCellReuseIdentifier: TextContent.URLTableView.cellIdentifier)
+        tableView.delegate = self
+        tableView.dataSource = self
         
         view.addSubview(tableView)
         
@@ -75,5 +79,20 @@ extension URLViewController {
             tableView.topAnchor.constraint(equalTo: URLField.bottomAnchor),
             tableView.bottomAnchor.constraint(equalTo: addURLButton.topAnchor, constant: -16)
         ])
+    }
+}
+
+//MARK: - Table View Functionality
+
+extension URLViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return urlController.URLs.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: TextContent.URLTableView.cellIdentifier, for: indexPath)
+        let url = urlController.URLs[indexPath.row]
+        cell.textLabel?.text = "\(url.absoluteString)"
+        return cell
     }
 }
