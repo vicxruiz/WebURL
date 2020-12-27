@@ -37,8 +37,8 @@ extension URLViewController {
     }
     
     private func setupTextField() {
+        URLField.delegate = self
         URLField.translatesAutoresizingMaskIntoConstraints = false
-
         hideKeyboardWhenTappedAround()
         
         view.addSubview(URLField)
@@ -94,5 +94,14 @@ extension URLViewController: UITableViewDataSource, UITableViewDelegate {
         let url = urlController.URLs[indexPath.row]
         cell.textLabel?.text = "\(url.absoluteString)"
         return cell
+    }
+}
+
+//MARK: - Text Field Functionality
+
+extension URLViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
