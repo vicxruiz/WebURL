@@ -17,6 +17,10 @@ class InputField: UITextField {
             attributedPlaceholder = NSAttributedString(string: placeholderText,
                                                        attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
         }
+        autocapitalizationType = .none
+        autocorrectionType = .no
+        spellCheckingType = .no
+        keyboardType = .URL
         textAlignment = .left
         borderStyle = .roundedRect
         font = UIFont.boldSystemFont(ofSize: 16)
