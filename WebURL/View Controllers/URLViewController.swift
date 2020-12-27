@@ -45,7 +45,7 @@ extension URLViewController {
         NSLayoutConstraint.activate([
             URLField.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: screenWidth * 0.06),
             URLField.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -screenWidth * 0.06),
-            URLField.topAnchor.constraint(equalTo: self.view.topAnchor, constant: screenHeight * 0.05),
+            URLField.topAnchor.constraint(equalTo: self.view.topAnchor, constant: screenHeight * 0.06),
             URLField.heightAnchor.constraint(equalToConstant: screenHeight * 0.035)
         ])
     }
@@ -59,7 +59,7 @@ extension URLViewController {
             addURLButton.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: screenWidth * 0.06),
             addURLButton.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -screenWidth * 0.06),
             addURLButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -screenHeight * 0.05),
-            addURLButton.heightAnchor.constraint(equalToConstant: screenHeight * 0.035)
+            addURLButton.heightAnchor.constraint(equalToConstant: screenHeight * 0.05)
         ])
     }
     
