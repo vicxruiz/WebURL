@@ -14,6 +14,13 @@
 		9849CBA8259929EF000BB31C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9849CBA6259929EF000BB31C /* LaunchScreen.storyboard */; };
 		9849CBB3259929F0000BB31C /* WebURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9849CBB2259929F0000BB31C /* WebURLTests.swift */; };
 		9849CBBE259929F0000BB31C /* WebURLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9849CBBD259929F0000BB31C /* WebURLUITests.swift */; };
+		9849CBDF25992D1A000BB31C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9849CBDE25992D1A000BB31C /* HTTPMethod.swift */; };
+		9849CBE725992D7A000BB31C /* TextContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9849CBE625992D7A000BB31C /* TextContent.swift */; };
+		9849CBEC25992E75000BB31C /* WebURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9849CBEB25992E75000BB31C /* WebURL.swift */; };
+		9849CBF1259931A8000BB31C /* URLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9849CBF0259931A8000BB31C /* URLViewController.swift */; };
+		9849CBF62599324E000BB31C /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9849CBF52599324E000BB31C /* UIViewControllerExtensions.swift */; };
+		9849CC1725993B6A000BB31C /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9849CC1625993B6A000BB31C /* InputField.swift */; };
+		9851F0DE2599406200466883 /* ButtonWithText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9851F0DD2599406200466883 /* ButtonWithText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		9849CBB9259929F0000BB31C /* WebURLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebURLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9849CBBD259929F0000BB31C /* WebURLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebURLUITests.swift; sourceTree = "<group>"; };
 		9849CBBF259929F0000BB31C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9849CBDE25992D1A000BB31C /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		9849CBE625992D7A000BB31C /* TextContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextContent.swift; sourceTree = "<group>"; };
+		9849CBEB25992E75000BB31C /* WebURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebURL.swift; sourceTree = "<group>"; };
+		9849CBF0259931A8000BB31C /* URLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLViewController.swift; sourceTree = "<group>"; };
+		9849CBF52599324E000BB31C /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		9849CC1625993B6A000BB31C /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		9851F0DD2599406200466883 /* ButtonWithText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +146,8 @@
 		9849CBD125992B08000BB31C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9849CC1625993B6A000BB31C /* InputField.swift */,
+				9851F0DD2599406200466883 /* ButtonWithText.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,6 +155,7 @@
 		9849CBD225992B0E000BB31C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9849CBF0259931A8000BB31C /* URLViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -146,6 +163,7 @@
 		9849CBD325992B20000BB31C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9849CBF52599324E000BB31C /* UIViewControllerExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -160,6 +178,8 @@
 		9849CBD525992B32000BB31C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9849CBE625992D7A000BB31C /* TextContent.swift */,
+				9849CBEB25992E75000BB31C /* WebURL.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,6 +214,7 @@
 		9849CBD925992B53000BB31C /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				9849CBDE25992D1A000BB31C /* HTTPMethod.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -335,8 +356,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9849CBEC25992E75000BB31C /* WebURL.swift in Sources */,
+				9849CBE725992D7A000BB31C /* TextContent.swift in Sources */,
 				9849CB9C259929EC000BB31C /* AppDelegate.swift in Sources */,
 				9849CB9E259929EC000BB31C /* SceneDelegate.swift in Sources */,
+				9849CBF1259931A8000BB31C /* URLViewController.swift in Sources */,
+				9849CC1725993B6A000BB31C /* InputField.swift in Sources */,
+				9849CBDF25992D1A000BB31C /* HTTPMethod.swift in Sources */,
+				9851F0DE2599406200466883 /* ButtonWithText.swift in Sources */,
+				9849CBF62599324E000BB31C /* UIViewControllerExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
