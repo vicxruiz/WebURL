@@ -81,9 +81,9 @@ extension URLViewController {
         view.addSubview(tableView)
         
         NSLayoutConstraint.activate([
-            tableView.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: screenWidth * 0.06),
+            tableView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
             tableView.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -screenWidth * 0.06),
-            tableView.topAnchor.constraint(equalTo: URLField.bottomAnchor),
+            tableView.topAnchor.constraint(equalTo: URLField.bottomAnchor, constant: 16),
             tableView.bottomAnchor.constraint(equalTo: addURLButton.topAnchor, constant: -16)
         ])
     }
