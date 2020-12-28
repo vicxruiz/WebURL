@@ -21,7 +21,8 @@ struct TextContent {
         static let cellIdentifier = "URLCell"
     }
     
-    struct Networking {
-        static let json = "json"
+    struct Alert {
+        static let invalidURL = "Invalid URL"
+        static let invalidURLMessage = "Please enter a valid URL."
     }
 }

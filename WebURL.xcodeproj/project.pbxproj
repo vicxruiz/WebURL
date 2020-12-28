@@ -16,13 +16,14 @@
 		9849CBBE259929F0000BB31C /* WebURLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9849CBBD259929F0000BB31C /* WebURLUITests.swift */; };
 		9849CBDF25992D1A000BB31C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9849CBDE25992D1A000BB31C /* HTTPMethod.swift */; };
 		9849CBE725992D7A000BB31C /* TextContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9849CBE625992D7A000BB31C /* TextContent.swift */; };
-		9849CBEC25992E75000BB31C /* WebURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9849CBEB25992E75000BB31C /* WebURL.swift */; };
 		9849CBF1259931A8000BB31C /* URLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9849CBF0259931A8000BB31C /* URLViewController.swift */; };
-		9849CBF62599324E000BB31C /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9849CBF52599324E000BB31C /* UIViewControllerExtensions.swift */; };
+		9849CBF62599324E000BB31C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9849CBF52599324E000BB31C /* UIViewControllerExtension.swift */; };
 		9849CC1725993B6A000BB31C /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9849CC1625993B6A000BB31C /* InputField.swift */; };
 		9851F0DE2599406200466883 /* ButtonWithText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9851F0DD2599406200466883 /* ButtonWithText.swift */; };
 		9851F0E32599455900466883 /* URLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9851F0E22599455900466883 /* URLController.swift */; };
 		9851F0E82599469600466883 /* URLTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9851F0E72599469600466883 /* URLTableViewCell.swift */; };
+		9851F0F02599504D00466883 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9851F0EF2599504D00466883 /* UIButtonExtension.swift */; };
+		9851F0F5259954A100466883 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9851F0F4259954A100466883 /* URLExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,13 +59,14 @@
 		9849CBBF259929F0000BB31C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9849CBDE25992D1A000BB31C /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		9849CBE625992D7A000BB31C /* TextContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextContent.swift; sourceTree = "<group>"; };
-		9849CBEB25992E75000BB31C /* WebURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebURL.swift; sourceTree = "<group>"; };
 		9849CBF0259931A8000BB31C /* URLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLViewController.swift; sourceTree = "<group>"; };
-		9849CBF52599324E000BB31C /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		9849CBF52599324E000BB31C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		9849CC1625993B6A000BB31C /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 		9851F0DD2599406200466883 /* ButtonWithText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithText.swift; sourceTree = "<group>"; };
 		9851F0E22599455900466883 /* URLController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLController.swift; sourceTree = "<group>"; };
 		9851F0E72599469600466883 /* URLTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTableViewCell.swift; sourceTree = "<group>"; };
+		9851F0EF2599504D00466883 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		9851F0F4259954A100466883 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +123,6 @@
 				9849CBD525992B32000BB31C /* Models */,
 				9849CBD625992B41000BB31C /* Navigation */,
 				9849CBD725992B47000BB31C /* Resources */,
-				9849CBDA25992B5D000BB31C /* Services */,
 				9849CBD825992B4C000BB31C /* Storyboards */,
 				9849CBD225992B0E000BB31C /* View Controllers */,
 				9849CBD125992B08000BB31C /* Views */,
@@ -168,7 +169,9 @@
 		9849CBD325992B20000BB31C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9849CBF52599324E000BB31C /* UIViewControllerExtensions.swift */,
+				9849CBF52599324E000BB31C /* UIViewControllerExtension.swift */,
+				9851F0EF2599504D00466883 /* UIButtonExtension.swift */,
+				9851F0F4259954A100466883 /* URLExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -185,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				9849CBE625992D7A000BB31C /* TextContent.swift */,
-				9849CBEB25992E75000BB31C /* WebURL.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,13 +225,6 @@
 				9849CBDE25992D1A000BB31C /* HTTPMethod.swift */,
 			);
 			path = Enums;
-			sourceTree = "<group>";
-		};
-		9849CBDA25992B5D000BB31C /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,17 +357,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9849CBEC25992E75000BB31C /* WebURL.swift in Sources */,
+				9851F0F5259954A100466883 /* URLExtension.swift in Sources */,
 				9849CBE725992D7A000BB31C /* TextContent.swift in Sources */,
 				9849CB9C259929EC000BB31C /* AppDelegate.swift in Sources */,
 				9851F0E32599455900466883 /* URLController.swift in Sources */,
 				9849CB9E259929EC000BB31C /* SceneDelegate.swift in Sources */,
+				9851F0F02599504D00466883 /* UIButtonExtension.swift in Sources */,
 				9851F0E82599469600466883 /* URLTableViewCell.swift in Sources */,
 				9849CBF1259931A8000BB31C /* URLViewController.swift in Sources */,
 				9849CC1725993B6A000BB31C /* InputField.swift in Sources */,
 				9849CBDF25992D1A000BB31C /* HTTPMethod.swift in Sources */,
 				9851F0DE2599406200466883 /* ButtonWithText.swift in Sources */,
-				9849CBF62599324E000BB31C /* UIViewControllerExtensions.swift in Sources */,
+				9849CBF62599324E000BB31C /* UIViewControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

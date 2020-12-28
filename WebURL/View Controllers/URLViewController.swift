@@ -53,6 +53,7 @@ extension URLViewController {
     
     private func setupAddUrlButton() {
         addURLButton.translatesAutoresizingMaskIntoConstraints = false
+        addURLButton.addTarget(self, action: #selector(addURLButtonPressed), for: .touchUpInside)
         
         view.addSubview(addURLButton)
         
@@ -62,6 +63,12 @@ extension URLViewController {
             addURLButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -screenHeight * 0.05),
             addURLButton.heightAnchor.constraint(equalToConstant: screenHeight * 0.05)
         ])
+    }
+    
+    @objc func addURLButtonPressed(_ sender: UIButton) {
+        sender.buttonPressedAnimation {
+            self.validateURL()
+        }
     }
     
     private func setupTableView() {
@@ -104,4 +111,20 @@ extension URLViewController: UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+    
+    func validateURL() {
+        guard let text = URLField.text, !text.isEmpty else {
+            showAlert(on: self, style: .alert, title: TextContent.Alert.invalidURL, message: TextContent.Alert.invalidURLMessage)
+            return
+        }
+        let isValidURL = urlController.validateURL(urlString: text)
+        if isValidURL {
+            URLField.text = ""
+            tableView.reloadData()
+        } else {
+            showAlert(on: self, style: .alert, title: TextContent.Alert.invalidURL, message: TextContent.Alert.invalidURLMessage)
+        }
+    }
 }
+
+
