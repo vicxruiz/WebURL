@@ -111,7 +111,11 @@ extension URLViewController: UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
-    
+}
+
+//MARK: - URL Validation
+
+extension URLViewController {
     func validateURL() {
         guard let text = URLField.text, !text.isEmpty else {
             showAlert(on: self, style: .alert, title: TextContent.Alert.invalidURL, message: TextContent.Alert.invalidURLMessage)
